@@ -30,7 +30,18 @@
 					$('.secciones').each(function() {
 						if ($(this).css('display') == 'block') {
 							$(this).hide('slow', function() {
-								$('#'+mostrar).show(3000);
+								if (mostrar == 'servicios') {
+									$('#'+mostrar).show(function() {
+										$('#radiografia').animate({'margin-left':'136px', 'margin-top':'10px'},1500);
+ 
+                    					$('#identidad').animate({'margin-left':'31%', 'margin-top':'30%'},1500);
+ 
+					                    $('#combustible').animate({'margin-left':'58%', 'margin-top':'30%'},1500);					                    										
+					                    $('#reframe').animate({'margin-left':'79%', 'margin-top':''},1500);
+									});
+								} else {
+									$('#'+mostrar).show(3000);
+								}
 								$('body').css('background-image', 'url(images/'+mostrar+'/fondo.jpg)');
 							});
 						}
@@ -38,6 +49,32 @@
 				});
    			});
 		</script>
+		
+		<!-- MENU SERVICIOS -->	
+		<script>
+			$(document).ready(function(){
+ 	        	$("#menu-about").click(function(event){
+ 	        		event.preventDefault();
+ 	      		$("#home").hide("slow");
+ 	         });
+ 	 
+ 	       $("#img-radiografia").click(function(event){
+ 	       event.preventDefault();
+ 	       $('#img-radiografia').animate({'margin-left':'-128px', 'margin-top':'-19px','width':'135px'},1500);
+ 
+                    					$('#img-identidad').animate({'margin-left':'-378px', 'margin-top':'22px','width':'135px'},1500);
+ 
+					                    $('#img-combustible').animate({'margin-left':'-128px', 'margin-top':'-10px','width':'135px'},1500);					                    										
+					                    $('#img-reframe').animate({'margin-left':'-128px', 'margin-top':'-5px','width':'135px'},1500, function(){
+					                    });
+
+ 	       $("#sub-radiografia").show(3000);
+ 	 	
+          });
+
+      });
+		</script>
+		
 	</head>
 	
 	<body>
@@ -52,11 +89,9 @@
 						<div id="menu-clientes" class="menu-click" style="cursor:pointer;" >CLIENTES</div>
 						<div id="menu-casos" class="menu-click" style="cursor:pointer;" >CASOS</div>
 						<div id="menu-contacto" class="menu-click" style="cursor:pointer;" >CONTACTO</div>
-
 					</div>
 				</div>
 				<div id="bottom">SOCIAL MEDIA AGENCY</div>
-				<!-- <img id="bottom" src="images/header/sm.png" /> -->
 			</header>
 			
 			
@@ -64,11 +99,23 @@
 			<div id="home" class="secciones">
 				<img src="images/home/contenido.png" />
           	</div>
-
+		
+		
           	<div id="servicios" class="secciones">
-				<img src="images/home/contenido.png" />
+				<div id="radiografia"  style="cursor:pointer;" ><img id="img-radiografia" src="images/servicios/										200x200_radiografia.png" "/>
+				<div id="sub-radiografia" style="display:none">RADIOGRAFIA<br>IDENTIDAD DIGITAL<br>COMBUSTIBLE<br>DESARROLLO 										PROGRAMACIÓN<br>ANALISIS ROI</div></div>
+				
+				<div id="identidad"  style="cursor:pointer;"><img id="img-identidad" src="images/servicios/200x200_identidad.png" />
+				<div id="sub-identidad" class="secciones"></div></div>
+				
+				<div id="combustible"  style="cursor:pointer;"><img id="img-combustible" src="images/servicios/200x200_combustible.png" />
+				<div id="sub-combustible" class="secciones"></div></div>
+				
+				<div id="reframe"  style="cursor:pointer;"><img id="img-reframe" src="images/servicios/200x200_reframe.png" />
+				<div id="sub-reframe" class="secciones"></div></div>
           	</div>
           	
+         
           	 <div id="productos" class="secciones">
 				<img src="images/home/contenido.png" />
           	</div>

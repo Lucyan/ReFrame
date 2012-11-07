@@ -88,11 +88,46 @@ header #bottom {
 	width: 279px;
 }
 
+#sub-radiografia{
+	background-color: white;
+	font-size: 17pt;
+	text-indent: 0.16em;
+	color: black;
+	margin-top: -4px;
+	margin-right: 980px;
+	width: 279px;
+}
+
+
 /* Contenido */
 #contenido {
 	padding-bottom: 46px;
 	margin-top:40px;
 }
+
+/*servicios*/
+
+#radiografia, #identidad, #combustible, #reframe{
+	position:absolute;
+}
+
+
+#radiografia{
+		
+}
+
+#identidad{
+	}
+
+ 
+#combustible{
+	
+}
+ 
+#reframe{
+	
+}
+
 
 /* Footer */
 footer {
