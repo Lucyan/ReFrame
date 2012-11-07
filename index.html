@@ -20,11 +20,20 @@
 		<script>
 			$(document).ready(function(){
 
-				$('.menu div').click(function() {
+				$(".secciones").hide();
+				$('#home').show();
+
+				$('.menu-click').click(function(event) {
+					event.preventDefault();
 					var mostrar = $(this).attr('id');
 					mostrar = mostrar.replace('menu-', '');
-					$(".secciones").hide("slow", function() {
-						$('#'+mostrar).show(3000);
+					$('.secciones').each(function() {
+						if ($(this).css('display') == 'block') {
+							$(this).hide('slow', function() {
+								$('#'+mostrar).show(3000);
+								$('body').css('background-image', 'url(images/'+mostrar+'/fondo.jpg)');
+							});
+						}
 					});
 				});
    			});
@@ -37,12 +46,12 @@
 				<div id="top">
 					<img src="images/header/logo.png" />
 					<div class="menu">
-						<div id="menu-home" style="cursor:s-resize">ABOUT</div>
-						<div id="menu-servicios" style="cursor:s-resize" >SERVICIOS</div>
-						<div id="menu-productos" style="cursor:s-resize" >PRODUCTOS</div>
-						<div id="menu-clientes" style="cursor:s-resize" >CLIENTES</div>
-						<div id="menu-casos" style="cursor:s-resize" >CASOS</div>
-						<div id="menu-contacto" style="cursor:s-resize" >CONTACTO</div>
+						<div id="menu-home" class="menu-click" style="cursor:pointer;">ABOUT</div>
+						<div id="menu-servicios" class="menu-click" style="cursor:pointer;" >SERVICIOS</div>
+						<div id="menu-productos" class="menu-click" style="cursor:pointer;" >PRODUCTOS</div>
+						<div id="menu-clientes" class="menu-click" style="cursor:pointer;" >CLIENTES</div>
+						<div id="menu-casos" class="menu-click" style="cursor:pointer;" >CASOS</div>
+						<div id="menu-contacto" class="menu-click" style="cursor:pointer;" >CONTACTO</div>
 
 					</div>
 				</div>
@@ -56,22 +65,22 @@
 				<img src="images/home/contenido.png" />
           	</div>
 
-          	<div id="servicios" style="display:none" class="secciones">
+          	<div id="servicios" class="secciones">
 				<img src="images/home/contenido.png" />
           	</div>
           	
-          	 <div id="productos" style="display:none" class="secciones">
+          	 <div id="productos" class="secciones">
 				<img src="images/home/contenido.png" />
           	</div>
-          	<div id="clientes" style="display:none" class="secciones">
-				<img src="images/home/contenido.png" />
-          	</div>
-          	
-          	<div id="casos" style="display:none" class="secciones">
+          	<div id="clientes" class="secciones">
 				<img src="images/home/contenido.png" />
           	</div>
           	
-          	<div id="contacto" style="display:none" class="secciones">
+          	<div id="casos" class="secciones">
+				<img src="images/home/contenido.png" />
+          	</div>
+          	
+          	<div id="contacto" class="secciones">
 				<img src="images/home/contenido.png" />
           	</div>
          </div>
