@@ -89,15 +89,24 @@ header #bottom {
 }
 
 #sub-radiografia{
-	background-color: white;
-	font-size: 17pt;
+	background-color: #00aef0;
+	font-size: 31pt;
 	text-indent: 0.16em;
 	color: black;
 	margin-top: -4px;
-	width: 279px;
-    margin-left:130%;
+	width: 399px;
+    margin-left:350px;
 }
 
+#sub-identidad{
+	background-color: #00aef0;
+	font-size: 31pt;
+	text-indent: 0.16em;
+	color: black;
+	margin-top: -4px;
+	width: 399px;
+    margin-left:350px;
+}
 
 /* Contenido */
 #contenido {
@@ -109,6 +118,8 @@ header #bottom {
 
 #radiografia, #identidad, #combustible, #reframe{
 	position:absolute;
+	width: 0%;
+	height: 20%;
 }
 
 

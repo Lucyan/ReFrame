@@ -54,28 +54,70 @@
 		<script>
 			$(document).ready(function(){
  	        	$("#menu-about").click(function(event){
- 	        		event.preventDefault();
+ 	        	event.preventDefault();
  	      		$("#home").hide("slow");
- 	         });
- 	 
- 	       $("#img-radiografia").click(function(event){
- 	       event.preventDefault();
- 	       $('#img-radiografia').animate({'margin-left':'-128px', 'margin-top':'-19px','width':'110px'},1500);
+ 	         	});
+ 	         	<!--RADIOGRAFIA-->
+ 	 			$("#img-radiografia").click(function(event){
+ 	       		event.preventDefault();
+ 	       		$('#img-radiografia').animate({'margin-left':'-128px', 'margin-top':'-19px','width':'110px'},1500);
  										
- 										$('#identidad').animate({'margin-left':'386px', 'margin-top':'108px'},1500);
-                    					$('#img-identidad').animate({'margin-left':'-378px', 'margin-top':'-3px','width':'110px'},1500);
+ 				$('#identidad').animate({'margin-left':'386px', 'margin-top':'108px'},1500);
+                $('#img-identidad').animate({'margin-left':'-378px', 'margin-top':'-3px','width':'110px'},1500);
  
-					                    $('#combustible').animate({'margin-left':'135px', 'margin-top':'281px'},1500);
-					                    $('#img-combustible').animate({'margin-left':'-128px', 'margin-top':'-63px','width':'110px'},1500);
+			    $('#combustible').animate({'margin-left':'135px', 'margin-top':'281px'},1500);
+			    $('#img-combustible').animate({'margin-left':'-128px', 'margin-top':'-63px','width':'110px'},1500);
 					                    
-					                    $('#reframe').animate({'margin-left':'-128px', 'margin-top':'-5px'},1500);			  					                            $('#img-reframe').animate({'margin-left':'135px', 'margin-top':'336px','width':'110px'},1500, function(){
-					                    });
-
- 	       $("#sub-radiografia").show(3000);
- 	 	
-          });
-
-      });
+			    $('#reframe').animate({'margin-left':'-128px', 'margin-top':'-5px'},1500);			  		
+			    $('#img-reframe').animate({'margin-left':'135px', 'margin-top':'336px','width':'110px'},1500);
+ 				$("#sub-radiografia").show(3000);
+          		});
+          		<!--IDENTIDAD-->
+          		$("#img-identidad").click(function(event){
+ 	       		event.preventDefault();
+ 	       		$('#img-radiografia').animate({'margin-left':'-128px', 'margin-top':'-19px','width':'110px'},1500);
+ 										
+ 				$('#identidad').animate({'margin-left':'386px', 'margin-top':'108px'},1500);
+                $('#img-identidad').animate({'margin-left':'-378px', 'margin-top':'-3px','width':'110px'},1500);
+ 
+			    $('#combustible').animate({'margin-left':'135px', 'margin-top':'281px'},1500);
+			    $('#img-combustible').animate({'margin-left':'-128px', 'margin-top':'-63px','width':'110px'},1500);
+					                    
+			    $('#reframe').animate({'margin-left':'-128px', 'margin-top':'-5px'},1500);			  		
+			    $('#img-reframe').animate({'margin-left':'135px', 'margin-top':'336px','width':'110px'},1500);
+ 				$("#sub-radiografia").show(3000);
+          		});
+          		<!--COMBUSTIBLE-->
+          		$("#img-combustible").click(function(event){
+ 	       		event.preventDefault();
+ 	       		$('#img-radiografia').animate({'margin-left':'-128px', 'margin-top':'-19px','width':'110px'},1500);
+ 										
+ 				$('#identidad').animate({'margin-left':'386px', 'margin-top':'108px'},1500);
+                $('#img-identidad').animate({'margin-left':'-378px', 'margin-top':'-3px','width':'110px'},1500);
+ 
+			    $('#combustible').animate({'margin-left':'135px', 'margin-top':'281px'},1500);
+			    $('#img-combustible').animate({'margin-left':'-128px', 'margin-top':'-63px','width':'110px'},1500);
+					                    
+			    $('#reframe').animate({'margin-left':'-128px', 'margin-top':'-5px'},1500);			  		
+			    $('#img-reframe').animate({'margin-left':'135px', 'margin-top':'336px','width':'110px'},1500);
+ 				$("#sub-radiografia").show(3000);
+          		});
+          		<!--REFRAME-->
+          		$("#img-reframe").click(function(event){
+ 	       		event.preventDefault();
+ 	       		$('#img-radiografia').animate({'margin-left':'-128px', 'margin-top':'-19px','width':'110px'},1500);
+ 										
+ 				$('#identidad').animate({'margin-left':'386px', 'margin-top':'108px'},1500);
+                $('#img-identidad').animate({'margin-left':'-378px', 'margin-top':'-3px','width':'110px'},1500);
+ 
+			    $('#combustible').animate({'margin-left':'135px', 'margin-top':'281px'},1500);
+			    $('#img-combustible').animate({'margin-left':'-128px', 'margin-top':'-63px','width':'110px'},1500);
+					                    
+			    $('#reframe').animate({'margin-left':'-128px', 'margin-top':'-5px'},1500);			  		
+			    $('#img-reframe').animate({'margin-left':'135px', 'margin-top':'336px','width':'110px'},1500);
+ 				$("#sub-radiografia").show(3000);
+          		});
+      		});
 		</script>
 		
 	</head>
@@ -98,30 +140,39 @@
 			</header>
 			
 			
-		<div id="contenido">   		            	
-			<div id="home" class="secciones">
+			<div id="contenido">   		            	
+				<div id="home" class="secciones">
 				<img src="images/home/contenido.png" />
-          	</div>
+         	</div>
 		
 		
           	<div id="servicios" class="secciones">
 				<div id="radiografia"  style="cursor:pointer;" ><img id="img-radiografia" src="images/servicios/200x200_radiografia.png" />
-				<div id="sub-radiografia" style="display:none">RADIOGRAFIA<br>IDENTIDAD DIGITAL<br>COMBUSTIBLE<br>DESARROLLO 										PROGRAMACIÓN<br>ANALISIS ROI</div></div>
+				<div id="sub-radiografia" style="display:none">RADIOGRAFIA<br>IDENTIDAD DIGITAL<br>COMBUSTIBLE<br>DESARROLLO 										PROGRAMACIÓN<br>ANALISÍS ROI</div></div>
+					
+				<!--	<div id="cont1" style="display:none">RADIOGRAFIA</div>
+					<div id="cont2" style="display:none">IDENTIDAD DIGITAL</div>
+					<div id="con3" style="display:none">COMBUSTIBLE</div>
+					<div id="cont4" style="display:none">DESARROLLO PROGRAMACIÓN</div> 					
+					<div id="sub-radiografia" style="display:none">ANALISÍS ROI</div>
+				-->
+				
 				
 				<div id="identidad"  style="cursor:pointer;"><img id="img-identidad" src="images/servicios/200x200_identidad.png" />
-				<div id="sub-identidad" class="secciones"></div></div>
+				<div id="sub-identidad" class="secciones">RADIOGRAFIA<br>IDENTIDAD DIGITAL<br>COMBUSTIBLE<br>DESARROLLO 										PROGRAMACIÓN<br>ANALISÍS ROI</div></div>
 				
 				<div id="combustible"  style="cursor:pointer;"><img id="img-combustible" src="images/servicios/200x200_combustible.png" />
-				<div id="sub-combustible" class="secciones"></div></div>
+				<div id="sub-combustible" class="secciones">RADIOGRAFIA<br>IDENTIDAD DIGITAL<br>COMBUSTIBLE<br>DESARROLLO 										PROGRAMACIÓN<br>ANALISÍS ROI</div></div>
 				
 				<div id="reframe"  style="cursor:pointer;"><img id="img-reframe" src="images/servicios/200x200_reframe.png" />
-				<div id="sub-reframe" class="secciones"></div></div>
+				<div id="sub-reframe" class="secciones">RADIOGRAFIA<br>IDENTIDAD DIGITAL<br>COMBUSTIBLE<br>DESARROLLO 										PROGRAMACIÓN<br>ANALISÍS ROI</div></div>
           	</div>
           	
          
           	 <div id="productos" class="secciones">
 				<img src="images/home/contenido.png" />
           	</div>
+
           	<div id="clientes" class="secciones">
 				<img src="images/home/contenido.png" />
           	</div>
