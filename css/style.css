@@ -88,25 +88,23 @@ header #bottom {
 	width: 279px;
 }
 
-#sub-radiografia{
-	background-color: #00aef0;
+.sub-secciones{
 	font-size: 31pt;
-	text-indent: 0.16em;
 	color: black;
-	margin-top: -4px;
-	width: 399px;
-    margin-left:350px;
+	width: 100%;
+    line-height: 1;
+    position: absolute;
+    display: block;
+    text-align: center;
+    margin-left: 30%;
+}
+.sub-secciones div {
+	text-align: left;
+}
+.sub-secciones div span {
+	background-color: #00aef0;
 }
 
-#sub-identidad{
-	background-color: #00aef0;
-	font-size: 31pt;
-	text-indent: 0.16em;
-	color: black;
-	margin-top: -4px;
-	width: 399px;
-    margin-left:350px;
-}
 
 /* Contenido */
 #contenido {
