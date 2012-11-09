@@ -50,7 +50,10 @@
 								} else {
 									$('#'+mostrar).show(3000);
 								}
-								$('body').css('background-image', 'url(images/'+mostrar+'/fondo.jpg)');
+								$('#page').fadeTo('slow', 0.3, function()
+                               	{
+                                   	$(this).css('background-image', 'url(images/'+mostrar+'/fondo.jpg)');
+                               	}).fadeTo('slow', 1);
 							});
 						}
 					});
@@ -134,11 +137,12 @@
 				</div>
 				<div id="sub-radiografia" class="sub-secciones" style="display:none">
 					<div>
-						<span>RADIOGRAFIA</span><br>
-						<span>IDENTIDAD DIGITAL</span><br>
-						<span>COMBUSTIBLE</span><br>
-						<span>DESARROLLO PROGRAMACIÓN</span><br>
-						<span>ANALISÍS ROI</span>
+						<span style="background-color: black;color:white;" >RADIOGRAFIA</span><br>
+						<span>DIAGNOSTICO DIGITAL</span><br>
+						<span>OBJETIVOS Y METAS </span><br>
+						<span>TARGET</span><br>
+						<span>INSIGHT</span><br>
+						<span>BRIEF DIGITAL DE LA MARCA</span>
 					</div>
 				</div>
 				
@@ -147,7 +151,7 @@
 				</div>
 				<div id="sub-identidad" class="sub-secciones" style="display:none">
 					<div>
-						<span>RADIOGRAFIA</span><br>
+						<span style="background-color: black;color:white;" >IDENTIDAD DIGITAL</span><br>
 						<span>IDENTIDAD DIGITAL</span><br>
 						<span>COMBUSTIBLE</span><br>
 						<span>DESARROLLO PROGRAMACIÓN</span><br>
@@ -160,7 +164,7 @@
 				</div>
 				<div id="sub-combustible" class="sub-secciones" style="display:none">
 					<div>
-						<span>RADIOGRAFIA</span><br>
+						<span style="background-color: black;color:white;" >COMBUSTIBLE</span><br>
 						<span>IDENTIDAD DIGITAL</span><br>
 						<span>COMBUSTIBLE</span><br>
 						<span>DESARROLLO PROGRAMACIÓN</span><br>
@@ -173,6 +177,7 @@
 				</div>
 				<div id="sub-reframe"  class="sub-secciones" style="display:none"> 
 					<div>
+						<span style="background-color: black;color:white;" >REFRAME</span><br>
 						<span>RADIOGRAFIA</span><br>
 						<span>IDENTIDAD DIGITAL</span><br>
 						<span>COMBUSTIBLE</span><br>
@@ -197,7 +202,16 @@
           	</div>
           	
           	<div id="contacto" class="secciones">
-				<img src="images/home/contenido.png" />
+					<div id="sub-contacto"  class="sub-secciones-contacto" style="display:"> 
+						<div>
+							<span>CONTACTO@REFRAME.CL</span><br>
+							<img id="skype" src="images/contacto/skype-ico.png" />
+							<span id="skype-2" style="font-size:35px;color:;">SKYPE----</span><br></br>
+							<span style="font-size:30px;color:; font-style: cursive;">ROMAN DIAZ #170</span><br>
+							<span style="font-size:30px;color:;font-style: cursive;">PROVIDENCIA, SANTIAGO.</span><br>
+							<span style="font-size:25px;color:;">CHILE.</span>
+						</div>
+					</div>
           	</div>
          </div>
          
