@@ -30,6 +30,8 @@ html, body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
+	min-height: 900px;
+	min-width: 1024px;
 }
 body {
 	background-color: #000;
@@ -52,7 +54,7 @@ a:hover {
 	background-size: cover;
 	z-index: 2;
 	position: relative;
-	min-height: 100%;
+	min-height: 900px;
 	height: auto !important;
 }
 
@@ -61,6 +63,7 @@ a:hover {
 
 header {
 	width: 100%;
+	min-width: 1024px;
 }
 
 header #top * {
@@ -151,22 +154,9 @@ header #bottom {
 }
 
 
-#radiografia{
-		
+#clientes img {
+	position: absolute;
 }
-
-#identidad{
-	}
-
- 
-#combustible{
-	
-}
- 
-#reframe{
-	
-}
-
 
 /* Footer */
 footer {
