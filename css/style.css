@@ -154,8 +154,10 @@ header #bottom {
 }
 
 
-#clientes img {
-	position: absolute;
+#clientes {
+	width: 100%;
+	text-align: center;
+	margin-top: 200px;
 }
 
 /* Footer */

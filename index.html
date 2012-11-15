@@ -60,27 +60,6 @@
 					                    $('#combustible').animate({'margin-left':'58%', 'margin-top':'30%'},1500);					                    										
 					                    $('#reframe').animate({'margin-left':'79%', 'margin-top':''},1500);
 									});
-								} else if (mostrar == 'clientes') {
-									$('#'+mostrar).show(3000);
-									var cantidad_imagenes = $('#clientes img').length;
-									var ancho = $(window).width();
-									var alto = $(window).height() - 200;
-									var index = 0;
-									var top = 3;
-									var left = 3;
-
-									$('#clientes img').each(function() {
-										$(this).animate({'margin-left': left+'%', 'margin-top': top+'%'},1500);
-										index++;
-
-										if (index <= (cantidad_imagenes/2)) {
-											top += 100 / cantidad_imagenes;
-										} else {
-											top -= 100 / cantidad_imagenes;
-										}
-
-										left += 100 / cantidad_imagenes;
-									});
 								} else {
 									$('#'+mostrar).show(3000);
 								}
