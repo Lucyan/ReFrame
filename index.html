@@ -17,7 +17,14 @@
 		<script src="js/jquery.queryloader2.js"></script>
 		<script src="js/bgstretcher.js"></script>
 		<script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
-		
+		<script type="text/javascript">
+			//<![CDATA[
+			if((navigator.userAgent.match(/MSIE/i)) || (navigator.userAgent.match(/Firefox/i))) {
+			document.write('<style type="text/css" media="screen">#skype-2{margin-top:3%;}#Skype{margin-top:11%;}</style>');	
+			}
+			//]]>
+		</script>
+
 		<script>
 			var primero = true;
 			$(document).ready(function(){
