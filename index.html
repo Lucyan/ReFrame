@@ -17,12 +17,9 @@
 		<script src="js/jquery.queryloader2.js"></script>
 		<script src="js/bgstretcher.js"></script>
 		<script type="text/javascript" src="http://download.skype.com/share/skypebuttons/js/skypeCheck.js"></script>
+		<script type="text/javascript" src="http://www.paginaswebynnova.com/lib/js-ynnova.js"></script>
 		<script type="text/javascript">
-			//<![CDATA[
-			if((navigator.userAgent.match(/MSIE/i)) || (navigator.userAgent.match(/Firefox/i))) {
-			document.write('<style type="text/css" media="screen">#skype-2{margin-top:3%;}#Skype{margin-top:11%;}</style>');	
-			}
-			//]]>
+			BrowserDetect.init();
 		</script>
 
 		<script>
@@ -44,7 +41,24 @@
 					$('.secciones').each(function() {
 						if ($(this).css('display') == 'block') {
 							$(this).hide('slow', function() {
-								if (mostrar == 'servicios') {
+								if(mostrar == 'servicios' && BrowserDetect.browser == 'Firefox'){
+                                   	$('.div-seccion').css('margin', '0');
+                                   	$('.div-seccion').css('width', '0');
+                                   	$('.div-seccion').css('height', '20%');
+                                   	$('.click-icono').css('margin', '');
+                                  	$('.click-icono').css('width', '');
+                                   	primero = true;
+                                   	$('.sub-secciones').hide();
+                                   	$('#'+mostrar).show(function() {
+	                                  	$('#radiografia').animate({'margin-left':'136px', 'margin-top':'10px'},1500);
+
+	                           			$('#identidad').animate({'margin-left':'31%', 'margin-top':'15%'},1500);
+
+	                           			$('#combustible').animate({'margin-left':'58%', 'margin-top':'15%'},1500);                                                                                                                                            
+	                           			$('#reframe').animate({'margin-left':'79%', 'margin-top':''},1500);
+                                    });
+
+                               	} else if (mostrar == 'servicios') {
 									$('.div-seccion').css('margin', '0');
 									$('.div-seccion').css('width', '0');
 									$('.div-seccion').css('height', '20%');
