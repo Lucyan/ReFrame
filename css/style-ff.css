@@ -1,0 +1,211 @@
+/* Fuentes */
+@font-face {
+	font-family: 'Futura';
+	src: url('font/futura.ttc');
+}
+@font-face {
+	font-family: 'FuturaEB';
+	src: url('font/Futura-eb.ttf');
+}
+
+/* General */
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+ Fuentes */
+@font-face {
+	font-family: 'Futura';
+	src: url('font/futura.ttc');
+}
+@font-face {
+	font-family: 'FuturaEB';
+	src: url('font/Futura-eb.ttf');
+}
+
+/* General */
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+body {
+	background-color: #000;
+	font-family: 'Arial', 'Verdana';
+	font-weight: bold;
+	line-height: normal;
+}
+
+a, a:hover, a:active, a:link,  a:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#page {
+	background:url('../images/home/fondo.jpg') center 0 no-repeat;
+	background-size: cover;
+	z-index: 2;
+	position: relative;
+	min-height: 100%;
+	height: auto !important;
+}
+
+
+/* Header */
+
+header {
+	width: 100%;
+}
+
+header #top * {
+	display: inline-block;
+}
+
+header .menu {
+	background-color:black;
+	font-size: 14pt;
+	text-indent: 0.15em;
+	float: right;
+	margin-top: 15px;
+	color: white;
+	
+}
+
+header #bottom {
+	background-color: white;
+	font-size: 17pt;
+	text-indent: 0.16em;
+	float: right;
+	color: black;
+	margin-top: -4px;
+	margin-right: 980px;
+	float: left;
+	width: 279px;
+}
+
+.sub-secciones{
+	font-size: 31pt;
+	color: black;
+	width: 100%;
+    line-height: 1;
+    position: absolute;
+    display: block;
+    text-align: center;
+    margin-left: 30%;
+}
+.sub-secciones div {
+	text-align: left;
+}
+.sub-secciones div span {
+	background-color: #00aef0;
+}
+
+.sub-secciones-contacto{
+	font-size: 31pt;
+	color: white;
+	width: 100%;
+    line-height: 1;
+    position: absolute;
+    display: block;
+    text-align: center;
+    margin-left: 30%;
+}
+.sub-secciones-contacto div {
+	text-align: left;
+}
+.sub-secciones-contacto div span {
+	background-color: black;
+}
+
+#skype{
+	width: 5%;
+	position: absolute;
+	margin-top: 2%;
+}
+
+#skype-2{
+	position: absolute;
+	margin-top: 3%;
+	margin-left: 6%;
+}
+
+
+/* Contenido */
+#contenido {
+	padding-bottom: 46px;
+	margin-top:40px;
+}
+
+/*servicios*/
+
+#radiografia, #identidad, #combustible, #reframe{
+	position:absolute;
+	width: 0%;
+	height: 20%;
+}
+
+
+#radiografia{
+		
+}
+
+#identidad{
+	}
+
+ 
+#combustible{
+	
+}
+ 
+#reframe{
+	
+}
+
+
+/* Footer */
+footer {
+	color: #FFF;
+	width: 100%;
+	height: 46px;
+	position: absolute;
+	bottom: 0 !important;
+	bottom: -1px;
+}
+
+footer * {
+	display: inline-block;
+	font-size: 8pt;
+}
+
+footer #fooarriba {
+	width: 100%
+}
+
+footer #fooarriba img{
+	float: right;
+	margin-right: 20px;
+}
+
+footer #fooabajo {
+	background-color: #000;
+	width: 100%;
+}
+
+footer #fooabajo #derecha {
+	margin-left: 4px;
+}
+
+footer #fooabajo #izquierda {
+	float: right;
+	margin-right: 10px;
+}
+
+footer #fooabajo #izquierda img {
+	margin-top: 3px;
+}
